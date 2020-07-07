@@ -1,0 +1,22 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>LOGIN</title>
+</head>
+<body>
+    <label for="pwd">Enter Password: </label>
+    <input type="text" id="pwd">
+    <button onclick="redirectFunction(correctPassword)">Login</button>
+    <script>
+        const correctPassword = "WestPoint1120";
+        function redirectFunction(correctPassword) {
+            let enteredPassword = document.getElementById("pwd").value;
+            if (enteredPassword === correctPassword) {
+                window.location.href = "index.html";
+            }
+        }  
+    </script>
+</body>
+</html>
